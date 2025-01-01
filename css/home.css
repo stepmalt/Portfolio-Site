@@ -8,16 +8,9 @@
     max-width: 1200px; /* Restrict width of the section */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-family: "ivystyle-sans", sans-serif; /* Use IvyStyle Sans font */
-}
-
-.intro {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     align-items: center;
-    margin-top: 10em;
-    padding: 2em;
-    background-color: rgba(185, 168, 204, 0.31);
-    border-radius: 11px;
     gap: 2em;
 }
 
@@ -74,9 +67,10 @@
     gap: 5em;
     background-color: #CECDE5;
     border-radius: 12px;
-    padding: 5em;
+    padding: 40px 60px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
+    margin: 40px auto;
+    max-width: 1200px;
 }
 
 .projects-grid>div {
