@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +9,44 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="assets/graphics/sm logo.svg" alt="SM Logo">
+            <img src="assets/graphics/smlogo.svg" alt="SM Logo">
         </div>
         <nav>
-            <a href="index.html">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">Projects</button>
-                <div class="dropdown-content">
-                    <a href="project1.html">TDPR</a>
-                    <a href="project2.html">DFN</a>
-                    <a href="project3.html">GoalPact</a>
-                    <a href="project4.html">Glassdoor</a>
+            <div class="navitems">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Projects</button>
+                    <div class="dropdown-content">
+                        <a href="project1.html">TDPR</a>
+                        <a href="project2.html">DFN</a>
+                        <a href="project3.html">GoalPact</a>
+                        <a href="project4.html">Glassdoor</a>
+                    </div>
                 </div>
+                <a href="resume.html">Resume</a>
+                <a class="navitem" href="https://linkedin.com" target="_blank"><img src="assets/graphics/linkedin.svg"
+                        alt="LinkedIn"></a>
+                <a class="navitem" href="mailto:youremail@example.com"><img src="assets/graphics/email.svg"
+                        alt="Email"></a>
+                <a class="navitem" href="https://medium.com" target="_blank"><svg width="62" height="53"
+                        viewBox="0 0 62 53" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="62" height="53" rx="11" fill="#E9E4EF" />
+                        <rect x="5" y="7" width="53" height="39" fill="url(#pattern0_91_75)" />
+                        <defs>
+                            <pattern id="pattern0_91_75" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_91_75"
+                                    transform="matrix(0.000266809 0 0 0.000362587 0 -0.00943409)" />
+                            </pattern>
+                            <image id="image0_91_75" href="assets/graphics/mediumlogo.png" width="3748" height="2810" />
+                        </defs>
+                    </svg></a>
             </div>
-            <a href="resume.html">Resume</a>
-            <a href="https://linkedin.com" target="_blank"><img src="assets/graphics/linkedin.svg" alt="LinkedIn"></a>
-            <a href="mailto:youremail@example.com"><img src="assets/graphics/email.svg" alt="Email"></a>
-            <a href="https://medium.com" target="_blank"><img src="assets/graphics/medium.svg" alt="Medium"></a>
         </nav>
     </header>
 
@@ -37,39 +55,53 @@
     <main>
         <!-- Hero Section -->
         <section class="intro">
+            <div class="profile-picture">
+                <img src="assets/images/headshot.png" alt="Stephanie Maltese">
+            </div>
             <div class="bio">
                 <h1>Stephanie Maltese</h1>
                 <p>
-                    With a Master’s degree in UX design and research and a background in English, I approach UX research with empathy, curiosity, and a passion for storytelling. My goal is to uncover the stories behind user experiences and translate them into meaningful, impactful insights. For me, research is about understanding human connections and creating solutions that feel intuitive and inclusive.
+                    With a Master’s degree in UX design and research and a background in English, I approach UX research
+                    with empathy, curiosity, and a passion for storytelling. My goal is to uncover the stories behind
+                    user experiences and translate them into meaningful, impactful insights. For me, research is about
+                    understanding human connections and creating solutions that feel intuitive and inclusive.
                 </p>
             </div>
-            <div class="profile-picture">
-                <img src="assets/images/home page images/headshot.png" alt="Stephanie Maltese">
-            </div>
+            <!-- <div class="profile-picture">
+                <img src="assets/images/headshot.png" alt="Stephanie Maltese">
+            </div> -->
         </section>
-             
+
 
         <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
+        <section class="projects" id="projects">
+            <h2 class="projectsheader" style="text-align: center;">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="assets/images/home page images/tdpr logo.png" alt="The Donovan’s Piano Room">
+                    <a href="project1.html">
+                        <img src="assets/images/tdprlogo.png" alt="The Donovan’s Piano Room">
+                    </a>
                     <h3>The Donovan’s Piano Room</h3>
                     <p>UX Research and UX Writing</p>
                 </div>
                 <div class="project-card">
-                    <img src="assets/images/home page images/dfn logo.png" alt="Dyslexia Foundation Nigeria">
+                    <a href="project2.html">
+                        <img src="assets/images/dfnlogo.png" alt="Dyslexia Foundation Nigeria">
+                    </a>
                     <h3>Dyslexia Foundation Nigeria</h3>
                     <p>UX Research</p>
                 </div>
                 <div class="project-card">
-                    <img src="assets/images/home page images/goalpact logo.png" alt="GoalPact">
+                    <a href="project3.html">
+                        <img src="assets/images/goalpactlogo.png" alt="GoalPact">
+                    </a>
                     <h3>GoalPact</h3>
                     <p>UX Research, Design, and Writing</p>
                 </div>
                 <div class="project-card">
-                    <img src="assets/images/home page images/glassdoor logo.png" alt="Glassdoor">
+                    <a href="project4.html">
+                        <img src="assets/images/glassdoorlogo.png" alt="Glassdoor">
+                    </a>
                     <h3>Glassdoor</h3>
                     <p>UX Research</p>
                 </div>
@@ -80,10 +112,25 @@
     <!-- Footer -->
     <footer>
         <div class="social-links">
-            <a href="https://linkedin.com" target="_blank"><img src="assets/graphics/linkedin.svg" alt="LinkedIn"></a>
-            <a href="mailto:youremail@example.com"><img src="assets/graphics/email.svg" alt="Email"></a>
-            <a href="https://medium.com" target="_blank"><img src="assets/graphics/medium.svg" alt="Medium"></a>
+            <a class="navitem" href="https://linkedin.com" target="_blank"><img src="assets/graphics/linkedin.svg"
+                    alt="LinkedIn"></a>
+            <a class="navitem" href="mailto:youremail@example.com"><img src="assets/graphics/email.svg" alt="Email"></a>
+            <a class="navitem" href="https://medium.com" target="_blank">
+                <svg width="62" height="53" viewBox="0 0 62 53" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="62" height="53" rx="11" fill="#E9E4EF" />
+                    <rect x="5" y="7" width="53" height="39" fill="url(#pattern0_91_75)" />
+                    <defs>
+                        <pattern id="pattern0_91_75" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_91_75"
+                                transform="matrix(0.000266809 0 0 0.000362587 0 -0.00943409)" />
+                        </pattern>
+                        <image id="image0_91_75" href="assets/graphics/mediumlogo.png" width="3748" height="2810" />
+                    </defs>
+                </svg>
+            </a>
         </div>
     </footer>
 </body>
+
 </html>

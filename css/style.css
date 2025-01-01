@@ -34,7 +34,15 @@ nav a {
 /* Hover Effect for Links */
 nav a:hover {
     color: #333; /* Change color on hover */
-    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+.navitems {
+    display: flex;
+    align-items: center;
+}
+
+.navitem:hover {
+    -webkit-filter: brightness(70%);
 }
 
 /* Dropdown Styling */
