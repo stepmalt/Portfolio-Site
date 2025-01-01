@@ -1,0 +1,98 @@
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensures vertical alignment */
+    height: 80px; /* Set a fixed height for the header */
+    padding: 0 40px; /* Adjust padding as needed */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Logo */
+header .logo img {
+    height: 60px; /* Resize the logo */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure it scales correctly */
+}
+
+/* Navigation Links */
+nav a {
+    margin: 0 20px; /* Adjust spacing between links */
+    font-size: 18px; /* Adjust font size */
+    font-weight: 400; /* Use specified weight */
+    font-style: normal; /* Ensure normal style */
+    font-family: "ivystyle-sans", sans-serif; /* Apply IvyStyle Sans font */
+    color: #5b4b8a; /* Adjust color if needed */
+    text-decoration: none; /* Remove underline */
+    text-transform: none; /* Ensure no automatic capitalization */
+}
+
+/* Hover Effect for Links */
+nav a:hover {
+    color: #333; /* Change color on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #fff;
+    color: #5b4b8a;
+    font-size: 18px; /* Match font size of links */
+    font-weight: 400;
+    font-style: normal;
+    font-family: "ivystyle-sans", sans-serif; /* Apply IvyStyle Sans font */
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: none; /* Ensure no automatic capitalization */
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px 0;
+    z-index: 1;
+    min-width: 200px;
+}
+
+.dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: "ivystyle-sans", sans-serif; /* Apply Adobe font */
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f7f7fc;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+}
