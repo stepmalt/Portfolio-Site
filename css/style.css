@@ -12,6 +12,10 @@ header {
     z-index: 10;
 }
 
+body {
+    margin: 0;
+}
+
 /* Logo */
 header .logo img {
     height: 60px; /* Resize the logo */
@@ -34,7 +38,15 @@ nav a {
 /* Hover Effect for Links */
 nav a:hover {
     color: #333; /* Change color on hover */
-    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+.navitems {
+    display: flex;
+    align-items: center;
+}
+
+.navitem:hover {
+    -webkit-filter: brightness(70%);
 }
 
 /* Dropdown Styling */
@@ -74,6 +86,7 @@ nav a:hover {
     padding: 10px 20px;
     font-family: "ivystyle-sans", sans-serif; /* Apply Adobe font */
     display: block;
+    border-radius: 8px;
 }
 
 .dropdown-content a:hover {
