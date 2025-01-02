@@ -59,6 +59,7 @@
 .projects {
     margin-top: 5em;
     font-family: "ivystyle-sans", sans-serif; /* Use IvyStyle Sans font */
+    color: #333;
 }
 
 .projects-grid {
