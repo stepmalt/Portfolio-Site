@@ -149,8 +149,7 @@
 }
 
 .imageblocktext {
-    max-width: 20%;
-    margin-right: 2em;
+    max-width: 40%;
     margin-top: 3em;
 }
 
@@ -171,6 +170,7 @@ li {
 
 .element img {
     margin-right: 1em;
+    margin-left: 0;
 }
 
 .element p {
@@ -217,10 +217,14 @@ li {
         margin-right: 2px;
     }
 
+    .imageblocktext {
+        margin-top: 0;
+    }
+
     .imageblocktext2 {
         max-width: 100%;
         margin-right: auto;
-        margin-top: 1em;
+        margin-top: 0;
     }
 
     .thinlist {
@@ -264,5 +268,27 @@ li {
     .imagegrid ul:last-of-type {
         grid-column: 1;
         grid-row: 2;
+    }
+
+    .imagegrid2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .imagegrid2 img:first-of-type {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .imagegrid2 .imageblocktext2:first-of-type {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .imagegrid2 .imageblocktext2:last-of-type {
+        grid-column: 1;
+        grid-row: 3;
     }
 }
