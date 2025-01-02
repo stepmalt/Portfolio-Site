@@ -1,0 +1,104 @@
+.case-study {
+    justify-content: space-between;
+    padding: 40px 60px;
+    background-color: #eae6f3;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "ivystyle-sans", sans-serif;
+
+}
+
+.case-study img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 50vh;
+}
+
+.case-study section {
+    margin-bottom: 3em;
+}
+
+.imageblock {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.imageblock h3 {
+    text-align: center;
+}
+
+.thinlist {
+    max-width: 50%;
+    margin: auto;
+}
+
+.thinlist {
+    margin-bottom: 8px;
+}
+
+.imageblock img {
+    margin-left: 0;
+    margin-right: 4em;
+}
+
+.imageblocktext {
+    max-width: 20%;
+    margin-right: 2em;
+    margin-top: 3em;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+.imageblocktext2 {
+    max-width: 40%;
+    margin-right: 2em;
+    margin-top: 3em;
+}
+
+.element {
+    display: flex;
+    align-items: start;
+}
+
+.element img {
+    margin-right: 1em;
+}
+
+.element p {
+    margin-top: 0;
+}
+
+.competitors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
+}
+
+.competitors-grid img {
+    height:200px;
+    width: auto;
+    margin-left: 0em;
+}
+
+.competitor-card {
+    display: flex;
+}
+
+.competitor-card h4 {
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .competitors-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5em;
+    }
+}

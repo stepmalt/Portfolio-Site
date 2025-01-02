@@ -109,3 +109,14 @@ nav a:hover {
         margin-top: 10px;
     }
 }
+
+
+::-moz-selection {
+    color: rgb(253, 250, 255);
+    background: rgb(167, 45, 224);
+}
+
+::selection {
+    color: rgb(253, 250, 255);
+    background: rgb(168, 56, 219);
+}
