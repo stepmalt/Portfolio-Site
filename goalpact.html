@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephanie Maltese - GoalPact Case Study</title>
+    <link rel="icon" type="image/x-icon" href="assets/smlogo.ico">
     <link rel="stylesheet" href="https://use.typekit.net/yzq4uvx.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/casestudy.css">
@@ -34,21 +35,10 @@
                         alt="LinkedIn"></a>
                 <a class="navitem" href="mailto:youremail@example.com"><img src="assets/graphics/email.svg"
                         alt="Email"></a>
-                <a class="navitem" href="https://medium.com" target="_blank"><svg width="62" height="53"
-                        viewBox="0 0 62 53" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <rect width="62" height="53" rx="11" fill="#E9E4EF" />
-                        <rect x="5" y="7" width="53" height="39" fill="url(#pattern0_91_75)" />
-                        <defs>
-                            <pattern id="pattern0_91_75" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use xlink:href="#image0_91_75"
-                                    transform="matrix(0.000266809 0 0 0.000362587 0 -0.00943409)" />
-                            </pattern>
-                            <image id="image0_91_75" href="assets/graphics/mediumlogo.png" width="3748" height="2810" />
-                        </defs>
-                    </svg></a>
+                <a class="navitem" href="https://medium.com" target="_blank"><img src="assets/graphics/medium.svg"
+                        alt="Medium"></a>
             </div>
-            <img class="hamburger" src="assets/graphics/hamburger.svg" onclick="openMobileNav()" />
+            <img id="hamburger" class="hamburger" src="assets/graphics/hamburger.svg" onclick="openMobileNav()" />
 
             <div id="mobilenav" class="navitems2 closed">
                 <a href="index.html">Home</a>
@@ -68,472 +58,525 @@
                             src="assets/graphics/linkedin.svg" alt="LinkedIn"></a>
                     <a class="navitem" href="mailto:youremail@example.com"><img src="assets/graphics/email.svg"
                             alt="Email"></a>
-                    <a class="navitem" href="https://medium.com" target="_blank"><svg width="62" height="53"
-                            viewBox="0 0 62 53" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect width="62" height="53" rx="11" fill="#E9E4EF" />
-                            <rect x="5" y="7" width="53" height="39" fill="url(#pattern0_91_76)" />
-                            <defs>
-                                <pattern id="pattern0_91_76" patternContentUnits="objectBoundingBox" width="1"
-                                    height="1">
-                                    <use xlink:href="#image0_91_76"
-                                        transform="matrix(0.000266809 0 0 0.000362587 0 -0.00943409)" />
-                                </pattern>
-                                <image id="image0_91_76" href="assets/graphics/mediumlogo.png" width="3748"
-                                    height="2810" />
-                            </defs>
-                        </svg></a>
+                    <a class="navitem" href="https://medium.com" target="_blank"><img src="assets/graphics/medium.svg"
+                            alt="Medium"></a>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="case-study">
-        <h1>GoalPact: Empowering Goal Achievement through Accountability and Visualization</h1>
+    <main onclick="closeMobileView()">
+        <div class="overview">
+            <h1>GoalPact: Empowering Goal Achievement through Accountability and Visualization</h1>
+            <p><b>Role:</b> User Researcher, Content Designer</p>
+            <p><b>Duration:</b> 6 weeks</p>
+            <p><b>Tools:</b> Usertesting.com, Figma</p>
+            <p><b>Methods:</b> Survey, Prototyping, User Scenarios, Competitive Analysis</p>
+        </div>
+        <div class="case-study">
+            <section>
+                <h2>Introduction</h2>
+                <p>In today’s fast-paced world, it’s easy for personal goals to take a back seat to daily
+                    responsibilities.
+                    The
+                    lack
+                    of structured systems for accountability, clear progress tracking, and meaningful support can leave
+                    individuals
+                    feeling unmotivated and overwhelmed. Recognizing this need, I developed the concept and design for
+                    GoalPact,
+                    a
+                    digital platform aimed at helping users achieve their goals by integrating accountability
+                    partnerships,
+                    interactive progress visualization, and supportive communities. This project represents a conceptual
+                    exercise in
+                    UX design, focusing on research, wireframing, and the application of theoretical frameworks rather
+                    than
+                    development or prototyping.</p>
 
-        <section>
-            <h2>Introduction</h2>
-            <p>In today’s fast-paced world, it’s easy for personal goals to take a back seat to daily responsibilities.
-                The
-                lack
-                of structured systems for accountability, clear progress tracking, and meaningful support can leave
-                individuals
-                feeling unmotivated and overwhelmed. Recognizing this need, I developed the concept and design for
-                GoalPact,
-                a
-                digital platform aimed at helping users achieve their goals by integrating accountability partnerships,
-                interactive progress visualization, and supportive communities. This project represents a conceptual
-                exercise in
-                UX design, focusing on research, wireframing, and the application of theoretical frameworks rather than
-                development or prototyping.</p>
-
-            <h2>Research</h2>
-            <p>Prior to designing the wireframes, I conducted a user research study with 28 participants to ensure the
-                app
-                addressed real user needs. The insights uncovered from this study directly informed my design process
-                and
-                ideation, helping shape features that align with user challenges.</p>
-        </section>
-        <section>
-            <h2>Key Findings</h2>
-            <h3>1. Diverse Goals</h3>
-            <p>Participants valued encouragement, shared tips/resources, and progress updates within goal-specific
-                communities
-                but expressed mixed feelings about public engagement.</p>
-            <img src="assets/images/goalpact/goals.png" />
-            <h3>2. Progress Impact</h3>
-            <p>All participants struggle to make progress toward their goals, and an alarming 85.8% of participants
-                indicated
-                that it impacts their mood and well-being.</p>
-            <img src="assets/images/goalpact/impact.png" />
-            <h3>3. Accountability Needs</h3>
-            <p>Many participants expressed interest in forming accountability partnerships, emphasizing qualities like
-                encouragement, shared interests, and regular check-ins. These insights highlight the importance of
-                fostering
-                meaningful, goal-oriented connections within the app.</p>
-            <img src="assets/images/goalpact/needs.png" />
-            <h3>4. Community Insights</h3>
-            <p>Participants valued encouragement, shared tips/resources, and progress updates within goal-specific
-                communities
-                but expressed mixed feelings about public engagement.</p>
-            <h3>5. Tool Limitations</h3>
-            <p>Commonly used tools (e.g., Google Calendar, Notion) lacked interactivity and personalized support,
-                underscoring
-                the demand for a more integrated and intuitive platform.</p>
-            <h3>6. Structured Support Preferences</h3>
-            <p>Most participants preferred moderate structure when working toward goals, favoring clear guidelines but
-                with
-                flexibility for individual needs.</p>
-            <h3>7. Celebration and Rewards</h3>
-            <p>Participants emphasized the importance of recognizing milestones, with personal rewards and progress
-                summaries
-                being the most motivating.</p>
-            <h3>8. Interest in Motivational Tools</h3>
-            <p>Tools like reminders, progress visuals, and motivational quotes were frequently mentioned as desirable
-                features
-                to keep users engaged.</p>
-            <h3>9. Participant Demographics</h3>
-            <p>The research group consisted of a diverse range of participants, spanning different ages (18-55+),
-                professional
-                backgrounds, and personal goals. This diversity ensured comprehensive insights that shaped GoalPact’s
-                inclusive
-                design.</p>
-        </section>
-        <section>
-            <h2>Design Process</h2>
-            <h3>Exploration</h3>
-            <p>The early design process for GoalPact involved creating low- and mid-fidelity prototypes to explore
-                potential solutions:</p>
-            <h3>Low-Fidelity Sketches</h3>
-            <p>Initially, I planned to design only two wireframes: one for the Goal Pathway and one for the timeline.
-                These sketches provided a foundation for visualizing the app's key features and focused on defining user
-                flows and navigation.</p>
-            <div class="imageblock">
-                <img src="assets/images/goalpact/lofi1.png" />
-                <img src="assets/images/goalpact/lofi2.png" />
-            </div>
-            <h3>Mid-Fidelity Refinement</h3>
-            <p>During the mid-fidelity phase, additional ideas for features emerged beyond the original low-fidelity
-                sketches of the Goal Pathway and timeline. These concepts were directly integrated into mid-fidelity
-                prototypes, expanding functionality and exploring how research insights could translate into actionable
-                features. The mid-fidelity prototypes refined layouts and added key elements like interactive
-                milestones, buddy dashboards, and enhanced usability features that aligned with user needs.</p>
-            <div class="imageblock">
-                <img src="assets/images/goalpact/mifimatch.png" />
-                <img src="assets/images/goalpact/mifipath.png" />
-            </div>
-            <div class="imageblock">
-                <img src="assets/images/goalpact/mificommunity.png" />
-                <img src="assets/images/goalpact/mifibuddy2.png" />
-            </div>
-            <div class="imageblock">
-                <img src="assets/images/goalpact/mifidash2.png" />
-                <img src="assets/images/goalpact/mifidash1.png" />
-            </div>
-            <h3>High-Fidelity Wireframes</h3>
-            <p>In the high-fidelity phase, I refined the visual and textual elements to align with the platform’s
-                identity. The UX writing process helped me explore a brand voice that was both encouraging and
-                motivational, ensuring users felt supported as they navigated their journey. Additionally, I
-                incorporated colors that reflected the branding and added images to enhance engagement and create a more
-                intuitive experience. These wireframes are scrollable and some buttons are active.
-                 </p>
-            <h4>Dual Timelines</h4>
-            <div class="imageblock">
-                <div class="figmaleft">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="390" height="800"
-                        src="https://embed.figma.com/proto/SfRIAJpt67acwbJFbivWLr/portfolio?node-id=171-826&p=f&scaling=min-zoom&content-scaling=fixed&page-id=171%3A2&starting-point-node-id=171%3A730&embed-host=share"
-                        allowfullscreen></iframe>
+                <h2>Research</h2>
+                <p>Prior to designing the wireframes, I conducted a user research study with 28 participants to ensure
+                    the
+                    app
+                    addressed real user needs. The insights uncovered from this study directly informed my design
+                    process
+                    and
+                    ideation, helping shape features that align with user challenges.</p>
+            </section>
+            <section>
+                <h2>Key Findings</h2>
+                <h3>1. Diverse Goals</h3>
+                <p>Participants valued encouragement, shared tips/resources, and progress updates within goal-specific
+                    communities
+                    but expressed mixed feelings about public engagement.</p>
+                <img src="assets/images/goalpact/goals.png" />
+                <h3>2. Progress Impact</h3>
+                <p>All participants struggle to make progress toward their goals, and an alarming 85.8% of participants
+                    indicated
+                    that it impacts their mood and well-being.</p>
+                <img src="assets/images/goalpact/impact.png" />
+                <h3>3. Accountability Needs</h3>
+                <p>Many participants expressed interest in forming accountability partnerships, emphasizing qualities
+                    like
+                    encouragement, shared interests, and regular check-ins. These insights highlight the importance of
+                    fostering
+                    meaningful, goal-oriented connections within the app.</p>
+                <img src="assets/images/goalpact/needs1.png" />
+                <img src="assets/images/goalpact/needs2.png" />
+                <h3>4. Community Insights</h3>
+                <p>Participants valued encouragement, shared tips/resources, and progress updates within goal-specific
+                    communities
+                    but expressed mixed feelings about public engagement.</p>
+                <h3>5. Tool Limitations</h3>
+                <p>Commonly used tools (e.g., Google Calendar, Notion) lacked interactivity and personalized support,
+                    underscoring
+                    the demand for a more integrated and intuitive platform.</p>
+                <h3>6. Structured Support Preferences</h3>
+                <p>Most participants preferred moderate structure when working toward goals, favoring clear guidelines
+                    but
+                    with
+                    flexibility for individual needs.</p>
+                <h3>7. Celebration and Rewards</h3>
+                <p>Participants emphasized the importance of recognizing milestones, with personal rewards and progress
+                    summaries
+                    being the most motivating.</p>
+                <h3>8. Interest in Motivational Tools</h3>
+                <p>Tools like reminders, progress visuals, and motivational quotes were frequently mentioned as
+                    desirable
+                    features
+                    to keep users engaged.</p>
+                <h3>9. Participant Demographics</h3>
+                <p>The research group consisted of a diverse range of participants, spanning different ages (18-55+),
+                    professional
+                    backgrounds, and personal goals. This diversity ensured comprehensive insights that shaped
+                    GoalPact’s
+                    inclusive
+                    design.</p>
+            </section>
+            <section>
+                <h2>Design Process</h2>
+                <h3>Exploration</h3>
+                <p>The early design process for GoalPact involved creating low- and mid-fidelity prototypes to explore
+                    potential solutions:</p>
+                <h3>Low-Fidelity Sketches</h3>
+                <p>Initially, I planned to design only two wireframes: one for the Goal Pathway and one for the
+                    timeline.
+                    These sketches provided a foundation for visualizing the app's key features and focused on defining
+                    user
+                    flows and navigation.</p>
+                <div class="imageblock">
+                    <img src="assets/images/goalpact/lofi1.png" />
+                    <img src="assets/images/goalpact/lofi2.png" />
                 </div>
-                <div class="imageblocktext" style="margin-right: auto;">
-                    <p><b>Buddy timeline:</b> Users can view posts or updates made by their
-                        accountability partners, which are
-                        referred to as “buddies.” Because GoalPact encourages users to focus on current partnerships,
-                        only
-                        active partnerships will show up here. However, by selecting the filter icon, users can choose
+                <h3>Mid-Fidelity Refinement</h3>
+                <p>During the mid-fidelity phase, additional ideas for features emerged beyond the original low-fidelity
+                    sketches of the Goal Pathway and timeline. These concepts were directly integrated into mid-fidelity
+                    prototypes, expanding functionality and exploring how research insights could translate into
+                    actionable
+                    features. The mid-fidelity prototypes refined layouts and added key elements like interactive
+                    milestones, buddy dashboards, and enhanced usability features that aligned with user needs.</p>
+                <div class="imageblock">
+                    <img src="assets/images/goalpact/mifimatch.png" />
+                    <img src="assets/images/goalpact/mifipath.png" />
+                </div>
+                <div class="imageblock">
+                    <img src="assets/images/goalpact/mificommunity.png" />
+                    <img src="assets/images/goalpact/mifibuddy2.png" />
+                </div>
+                <div class="imageblock">
+                    <img src="assets/images/goalpact/mifidash2.png" />
+                    <img src="assets/images/goalpact/mifidash1.png" />
+                </div>
+                <h3>High-Fidelity Wireframes</h3>
+                <p>In the high-fidelity phase, I refined the visual and textual elements to align with the platform’s
+                    identity. The UX writing process helped me explore a brand voice that was both encouraging and
+                    motivational, ensuring users felt supported as they navigated their journey. Additionally, I
+                    incorporated colors that reflected the branding and added images to enhance engagement and create a
+                    more
+                    intuitive experience. These wireframes are scrollable and some buttons are active.
+                     </p>
+                <h4>Dual Timelines</h4>
+                <div class="imageblock">
+                    <div class="figmaleft">
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="390" height="800"
+                            src="https://embed.figma.com/proto/SfRIAJpt67acwbJFbivWLr/portfolio?node-id=171-826&p=f&scaling=min-zoom&content-scaling=fixed&page-id=171%3A2&starting-point-node-id=171%3A730&embed-host=share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="imageblocktext" style="margin-right: auto;">
+                        <p><b>Buddy timeline:</b> Users can view posts or updates made by their
+                            accountability partners, which are
+                            referred to as “buddies.” Because GoalPact encourages users to focus on current
+                            partnerships,
+                            only
+                            active partnerships will show up here. However, by selecting the filter icon, users can
+                            choose
+                            to
+                            see prior accountability partners’ posts, if both users choose to remain connected.
+                        </p>
+                        <p><b>Community timeline:</b> Users can view posts from the community groups they are part of.
+                            By
+                            selecting
+                            the filter button, users can choose if they’d like to see posts from a specific community
+                            only.
+                            The
+                            community timeline will push content analyzed by an algorithm to ensure users see relevant
+                            content
+                            to their journey or preferences.</p>
+                    </div>
+                </div>
+                <h4>Dual Dashboards</h4>
+                <div class="imageblock">
+                    <div class="imageblocktext" style="margin-left: auto;">
+                        <ul>
+                            <li>
+                                Users can view their own weekly progress or their buddy’s (accountability partner) and
+                                toggle between the two with ease.
+                            </li>
+                            <li>
+                                Specific CTAs at the bottom of each dashboard encourage users to either engage with
+                                their
+                                accountability partner or update/interact with their own goals.
+                            </li>
+                            <li>
+                                The gauge charts allow users to visualize their progress for the week, paired with icons
+                                next to
+                                each step showcasing their status.
+                            </li>
+                            <li> Because users may be pursuing multiple goals, they can scroll down and see an
+                                additional
+                                goal,
+                                hence “goal category 1.”
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="figmaright">
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="390" height="800"
+                            src="https://embed.figma.com/proto/SfRIAJpt67acwbJFbivWLr/portfolio?node-id=171-1175&scaling=min-zoom&content-scaling=fixed&page-id=171%3A2&starting-point-node-id=171%3A730&embed-host=share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <h4>Goal Pathway</h4>
+                <div class="imagegrid2">
+                    <div class="figmaleft">
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="390" height="800"
+                            src="https://embed.figma.com/proto/SfRIAJpt67acwbJFbivWLr/portfolio?node-id=171-900&scaling=min-zoom&content-scaling=fixed&page-id=171%3A2&starting-point-node-id=171%3A730&embed-host=share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="imageblocktext2">
+                        <p>The Goal Pathway allows users to visualize their journey in a fun and engaging manner. Think
+                            of
+                            the
+                            yellow brick road from MGM’s The Wizard of Oz (1939). In this case, users unlock coloring of
+                            the
+                            path they’ve completed, while the rest remains in grayscale until they reach each goal
+                            point.
+                        </p>
+                        <h5>Key elements:</h5>
+                        <div class="element">
+                            <img src="assets/graphics/goalpath/step.svg" />
+                            <p><b>Step:</b> The yellow dot represents a step along the user’s journey to their
+                                milestone. These are
+                                smaller, incremental tasks or components that make up a whole milestone.</p>
+                        </div>
+                        <div class="element">
+                            <img src="assets/graphics/goalpath/milestone.svg" />
+                            <p><b>Milestone:</b>
+                                The squares represents milestones. These are major achievements or
+                                significant points along the user’s journey. Reaching these unlocks motivational
+                                elements
+                                like encouraging users to reward themselves, an inspiring message, or a celebration
+                                animation, depending on their preferences. </p>
+                        </div>
+                        <div class="element">
+                            <img style="margin-left: 0;" src="assets/graphics/goalpath/star.svg" />
+                            <p><b>Star:</b> Represents the final milestone.</p>
+                        </div>
+                        <div class="element">
+                            <img src="assets/graphics/goalpath/avatar.svg" />
+                            <p><b>Avatar:</b> Users can select an avatar to represent themselves along the journey. </p>
+                        </div>
+                        <div class="element">
+                            <img src="assets/graphics/goalpath/present.svg" />
+                            <p><b>Present:</b> At the end, users unlock their chosen celebration method.</p>
+                        </div>
+                    </div>
+                    <div class="imageblocktext2" style="margin: 0 auto;">
+                        <p><b>Overview:</b> Provides a concise, AI-generated summary of project’s current status,
+                            achievements,
+                            upcoming goals, and a motivational message. Paired with the visuals of seeing where they are
+                            on
+                            the journey, the overview tells them.</p>
+                        <p>
+                            <b>Customize:</b> Users can customize the coloring of the different elements on the pathway,
+                            and
+                            the
+                            color of the background the path is placed over. Users can also edit the title of the
+                            project.
+                            Though the design isn’t complete, when users tap on a milestone or step, they will have the
+                            following options:
+                        </p>
+                        <p>
+                            <b>View details:</b> A title and short description of the step or milestone provided by the
+                            user, the
+                            due date, and whether it is “in-progress”, “completed”, or “not started.” A design iteration
+                            being considered for usability testing is changing the color of the step circle to represent
+                            the
+                            three progress indicators listed above.
+                        </p>
+                        <p>
+                            <b>Mark as complete:</b> Users can select this option in the pop-up, or they can hold down
+                            the
+                            step or
+                            milestone icon to mark as complete.
+                        </p>
+                        <p>
+                            Results from my user research study indicated the top rewards or recognition users would
+                            prefer
+                            at the completion of their goal were a <b>personal reward (treat themselves), a badge or
+                                achievement, or a progress summary.</b> The user’s preference will be implemented into
+                            the
+                            present
+                            once they achieve the goal. </p>
+                    </div>
+                </div>
+                <h4>Matchmaking Quiz</h4>
+                <div class="imageblock">
+                    <div class="imageblocktext" style="margin-left: auto;">
+                        <p> To ensure GoalPact matches users with optimal accountability partners, they will take a quiz
+                            to
+                            allow us to gauge their preferences.
+                        </p>
+                        <p>
+                            <b>Step 1,</b> shown here, allows users to select the areas they would like to focus on. Not
+                            only will
+                            this
+                            allow us to match partners to those in similar goal areas (if they prefer that), but
+                            recommend
+                            them
+                            relevant groups.
+                        </p>
+                        <p>
+                            The rest of the quiz will include the following:
+                        </p>
+                        <p>
+                            <b>Step 2: Communication and Interaction Preferences.</b> Users can specify how and how
+                            often
+                            they
+                            prefer
+                            to communicate (text, video or voice).
+                        </p>
+                        <p>
+                            <b>Step 3: Motivation and Support Styles.</b> Users can choose their preferred support style
+                            such as
+                            positive reinforcement, constructive feedback, or strict accountability.
+                        </p>
+                        <p>
+                            <b>Step 4: Personality and Cultural Preferences.</b> These traits can allow us, if the user
+                            prefers, to
+                            match partners to those with compatible dynamics.
+                        </p>
+                        <p>
+                            <b>Step 5: Scheduling and Availability.</b> Users outline their general availability. This
+                            can
+                            be
+                            edited at any time.
+                        </p>
+                    </div>
+                    <div class="figmaright">
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="390" height="800"
+                            src="https://embed.figma.com/proto/SfRIAJpt67acwbJFbivWLr/portfolio?node-id=171-1129&scaling=min-zoom&content-scaling=fixed&page-id=171%3A2&starting-point-node-id=171%3A730&embed-host=share"
+                            allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </section>
+            <section>
+                <h2>Theoretical Foundations</h3>
+                    <p>The design of GoalPact was heavily informed by Common Bond/Identity Theory and Amy Jo Kim's Nine
+                        Principles of Community Design. Common Bond Theory shaped the accountability partnership
+                        features,
+                        emphasizing close interpersonal connections through shared goals and consistent check-ins.
+                        Simultaneously, Common Identity Theory inspired the community feed, fostering a sense of
+                        belonging
+                        through shared challenges and collaborative progress. Amy Jo Kim's principles guided the app's
+                        structure, particularly through clear purpose, evolving user profiles, and gathering spaces like
+                        the
+                        buddy and community feeds. These frameworks ensured that GoalPact not only addressed user needs
+                        but
+                        also
+                        created a meaningful and supportive ecosystem for goal achievement.</p>
+            </section>
+            <section>
+                <h2>User Scenarios</h2>
+                <p>To illustrate how GoalPact’s features address the challenges uncovered during research, the following
+                    user scenarios showcase how the platform fosters accountability, supports users’ goals, and builds
+                    meaningful connections through thoughtful design.</p>
+                <div class="imageblock">
+                    <div>
+                        <img style="width: 200px; margin: auto;" src="assets/images/goalpact/maya.png" />
+                        <h3>Maya, 32</h3>
+                        <ul class="thinlist">
+                            <li>Aspiring novelist</li>
+                            <li>Muse is suffering without someone to discuss her craft and story with</li>
+                            <li> Often misses her personal deadlines because of this drop in momentum</li>
+                            <li>Signs up, hoping to find both accountability and connection</li>
+                            <li>Matches with a fellow novelist and forms a rewarding partnership</li>
+                            <li>Spends time in the “Fiction Writers” community, and is fulfilled being in a group of
+                                those
+                                that share her dream.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img style="width: 200px; margin: auto;" src="assets/images/goalpact/jordan.png" />
+                        <h3>Jordan, 27</h3>
+                        <ul class="thinlist">
+                            <li>Freelance photographer</li>
+                            <li>Struggles with organization and planning.</li>
+                            <li>Making progress feels overwhelming due to this.</li>
+                            <li>With GoalPact, Jordan is drawn to the visualization pathway and dashboard.</li>
+                            <li>Thrives seeing progress laid out in a visually engaging, organized manner.</li>
+                            <li>Finds dual dashboards helpful, and feels supported by the accountability partnership he
+                                has also formed.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Competitors</h3>
+                <div class="competitors-grid">
+                    <div class="competitor-card">
+                        <img src="assets/images/goalpact/goalswon.png" alt="Goals Won">
+                        <div>
+                            <h4>GoalsWon</h4>
+                            <ul>
+                                <li>Task tracking, goal setting, and coaching.</li>
+                                <li>Helps users stay organized and motivated. </li>
+                                <li>Provides structured reminders, personalized insights, and accountability systems.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="competitor-card">
+                        <img src="assets/images/goalpact/buddycrush.png" alt="Buddy Crush">
+                        <div>
+                            <h4>Buddy Crush</h4>
+                            <ul>
+                                <li>Focuses on social accountability</li>
+                                <li>Users can create or join groups, monitor each other’s progress, and engage in
+                                    friendly
+                                    competition via leaderboards.</li>
+                                <li>Gamifies habit-building</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="competitor-card">
+                        <img src="assets/images/goalpact/squad.png" alt="Squad">
+                        <div>
+                            <h4>Squad</h4>
+                            <ul>
+                                <li>Focuses on short-term group challenges (1-4 weeks). </li>
+                                <li>Motivates users through daily check-ins and a credit system that rewards progress
+                                    and
+                                    penalizes inactivity.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="competitor-card">
+                        <img src="assets/images/goalpact/strides.png" alt="Strides">
+                        <div>
+                            <h4>Strides</h4>
+                            <ul>
+                                <li>Habit formation and goal tracking, customizable tools to monitor progress and build
+                                    consistency over time.</li>
+                                <li>Supports daily tracking and provides visual progress updates.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>GoalPact's Edge</h2>
+                <p>GoalPact offers a more comprehensive, interactive, and personalized experience.</p>
+                <h4>GoalPact...</h4>
+                <ul>
+                    <li>Prioritizes peer-based accountability through partnerships that foster meaningful connections.
+                    </li>
+                    <li>Encourages collaboration through shared dashboards and non-competitive motivation.</li>
+                    <li>Breaks down complex, long-term objectives into manageable milestones with our engaging
+                        visualization
+                        pathway.</li>
+                    <li>Provides tools for sustained progress, combining individualized support with the option to
+                        engage in
+                        community groups.</li>
+                    <li>Creates a holistic, user-centered experience that empowers users to stay motivated and connected
                         to
-                        see prior accountability partners’ posts, if both users choose to remain connected.
-                    </p>
-                    <p><b>Community timeline:</b> Users can view posts from the community groups they are part of. By
-                        selecting
-                        the filter button, users can choose if they’d like to see posts from a specific community only.
-                        The
-                        community timeline will push content analyzed by an algorithm to ensure users see relevant
-                        content
-                        to their journey or preferences.</p>
-                </div>
-            </div>
-            <h4>Dual Dashboards</h4>
-            <div class="imageblock">
-                <div class="imageblocktext" style="margin-left: auto;">
-                    <ul>
-                        <li>
-                            Users can view their own weekly progress or their buddy’s (accountability partner) and
-                            toggle between the two with ease.
-                        </li>
-                        <li>
-                            Specific CTAs at the bottom of each dashboard encourage users to either engage with their
-                            accountability partner or update/interact with their own goals.
-                        </li>
-                        <li>
-                            The gauge charts allow users to visualize their progress for the week, paired with icons
-                            next to
-                            each step showcasing their status.
-                        </li>
-                        <li> Because users may be pursuing multiple goals, they can scroll down and see an additional
-                            goal,
-                            hence “goal category 1.”
-                        </li>
-                    </ul>
-                </div>
-                <div class="figmaright">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="390" height="800"
-                        src="https://embed.figma.com/proto/SfRIAJpt67acwbJFbivWLr/portfolio?node-id=171-1175&scaling=min-zoom&content-scaling=fixed&page-id=171%3A2&starting-point-node-id=171%3A730&embed-host=share"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <h4>Goal Pathway</h4>
-            <div class="imagegrid2">
-                <div class="figmaleft">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="390" height="800"
-                        src="https://embed.figma.com/proto/SfRIAJpt67acwbJFbivWLr/portfolio?node-id=171-900&scaling=min-zoom&content-scaling=fixed&page-id=171%3A2&starting-point-node-id=171%3A730&embed-host=share"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="imageblocktext2">
-                    <p>The Goal Pathway allows users to visualize their journey in a fun and engaging manner. Think of
-                        the
-                        yellow brick road from MGM’s The Wizard of Oz (1939). In this case, users unlock coloring of the
-                        path they’ve completed, while the rest remains in grayscale until they reach each goal point.
-                    </p>
-                    <h5>Key elements:</h5>
-                    <div class="element">
-                        <img src="assets/graphics/goalpath/step.svg" />
-                        <p><b>Step:</b> The squares represents milestones. These are major achievements or
-                            significant points along the user’s journey. Reaching these unlocks motivational elements
-                            like encouraging users to reward themselves, an inspiring message, or a celebration
-                            animation, depending on their preferences. </p>
-                    </div>
-                    <div class="element">
-                        <img src="assets/graphics/goalpath/milestone.svg" />
-                        <p><b>Milestone:</b> The yellow dot represents a step along the user’s journey to their
-                            milestone. These are
-                            smaller, incremental tasks or components that make up a whole milestone.</p>
-                    </div>
-                    <div class="element">
-                        <img style="margin-left: 0;" src="assets/graphics/goalpath/star.svg" />
-                        <p><b>Star:</b> Represents the final milestone.</p>
-                    </div>
-                    <div class="element">
-                        <img src="assets/graphics/goalpath/avatar.svg" />
-                        <p><b>Avatar:</b> Users can select an avatar to represent themselves along the journey. </p>
-                    </div>
-                    <div class="element">
-                        <img src="assets/graphics/goalpath/present.svg" />
-                        <p><b>Present:</b> At the end, users unlock their chosen celebration method.</p>
-                    </div>
-                </div>
-                <div class="imageblocktext2" style="margin: 0 auto;">
-                    <p><b>Overview:</b> Provides a concise, AI-generated summary of project’s current status,
-                        achievements,
-                        upcoming goals, and a motivational message. Paired with the visuals of seeing where they are on
-                        the journey, the overview tells them.</p>
-                    <p>
-                        <b>Customize:</b> Users can customize the coloring of the different elements on the pathway, and
-                        the
-                        color of the background the path is placed over. Users can also edit the title of the project.
-                        Though the design isn’t complete, when users tap on a milestone or step, they will have the
-                        following options:
-                    </p>
-                    <p>
-                        <b>View details:</b> A title and short description of the step or milestone provided by the
-                        user, the
-                        due date, and whether it is “in-progress”, “completed”, or “not started.” A design iteration
-                        being considered for usability testing is changing the color of the step circle to represent the
-                        three progress indicators listed above.
-                    </p>
-                    <p>
-                        <b>Mark as complete:</b> Users can select this option in the pop-up, or they can hold down the
-                        step or
-                        milestone icon to mark as complete.
-                    </p>
-                    <p>
-                        Results from my user research study indicated the top rewards or recognition users would prefer
-                        at the completion of their goal were a <b>personal reward (treat themselves), a badge or
-                            achievement, or a progress summary.</b> The user’s preference will be implemented into the
-                        present
-                        once they achieve the goal. </p>
-                </div>
-            </div>
-            <h4>Matchmaking Quiz</h4>
-            <div class="imageblock">
-                <div class="imageblocktext" style="margin-left: auto;">
-                    <p> To ensure GoalPact matches users with optimal accountability partners, they will take a quiz to
-                        allow us to gauge their preferences.
-                    </p>
-                    <p>
-                        <b>Step 1,</b> shown here, allows users to select the areas they would like to focus on. Not
-                        only will
-                        this
-                        allow us to match partners to those in similar goal areas (if they prefer that), but recommend
-                        them
-                        relevant groups.
-                    </p>
-                    <p>
-                        The rest of the quiz will include the following:
-                    </p>
-                    <p>
-                        <b>Step 2: Communication and Interaction Preferences.</b> Users can specify how and how often
-                        they
-                        prefer
-                        to communicate (text, video or voice).
-                    </p>
-                    <p>
-                        <b>Step 3: Motivation and Support Styles.</b> Users can choose their preferred support style
-                        such as
-                        positive reinforcement, constructive feedback, or strict accountability.
-                    </p>
-                    <p>
-                        <b>Step 4: Personality and Cultural Preferences.</b> These traits can allow us, if the user
-                        prefers, to
-                        match partners to those with compatible dynamics.
-                    </p>
-                    <p>
-                        <b>Step 5: Scheduling and Availability.</b> Users outline their general availability. This can
-                        be
-                        edited at any time.
-                    </p>
-                </div>
-                <div class="figmaright">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="390" height="800"
-                        src="https://embed.figma.com/proto/SfRIAJpt67acwbJFbivWLr/portfolio?node-id=171-1129&scaling=min-zoom&content-scaling=fixed&page-id=171%3A2&starting-point-node-id=171%3A730&embed-host=share"
-                        allowfullscreen></iframe>
-                </div>
-
-            </div>
-        </section>
-        <section>
-            <h2>Theoretical Foundations</h3>
-                <p>The design of GoalPact was heavily informed by Common Bond/Identity Theory and Amy Jo Kim's Nine
-                    Principles of Community Design. Common Bond Theory shaped the accountability partnership features,
-                    emphasizing close interpersonal connections through shared goals and consistent check-ins.
-                    Simultaneously, Common Identity Theory inspired the community feed, fostering a sense of belonging
-                    through shared challenges and collaborative progress. Amy Jo Kim's principles guided the app's
-                    structure, particularly through clear purpose, evolving user profiles, and gathering spaces like the
-                    buddy and community feeds. These frameworks ensured that GoalPact not only addressed user needs but
-                    also
-                    created a meaningful and supportive ecosystem for goal achievement.</p>
-        </section>
-        <section>
-            <h2>User Scenarios</h2>
-            <p>To illustrate how GoalPact’s features address the challenges uncovered during research, the following
-                user scenarios showcase how the platform fosters accountability, supports users’ goals, and builds
-                meaningful connections through thoughtful design.</p>
-            <div class="imageblock">
-                <div>
-                    <img style="width: 200px; margin: auto;" src="assets/images/goalpact/maya.png" />
-                    <h3>Maya, 32</h3>
-                    <ul class="thinlist">
-                        <li>Aspiring novelist</li>
-                        <li>Muse is suffering without someone to discuss her craft and story with</li>
-                        <li> Often misses her personal deadlines because of this drop in momentum</li>
-                        <li>Signs up, hoping to find both accountability and connection</li>
-                        <li>Matches with a fellow novelist and forms a rewarding partnership</li>
-                        <li>Spends time in the “Fiction Writers” community, and is fulfilled being in a group of
-                            those
-                            that share her dream.</li>
-                    </ul>
-                </div>
-                <div>
-                    <img style="width: 200px; margin: auto;" src="assets/images/goalpact/jordan.png" />
-                    <h3>Jordan, 27</h3>
-                    <ul class="thinlist">
-                        <li>Freelance photographer</li>
-                        <li>Struggles with organization and planning.</li>
-                        <li>Making progress feels overwhelming due to this.</li>
-                        <li>With GoalPact, Jordan is drawn to the visualization pathway and dashboard.</li>
-                        <li>Thrives seeing progress laid out in a visually engaging, organized manner.</li>
-                        <li>Finds dual dashboards helpful, and feels supported by the accountability partnership he
-                            has also formed.</li>
-                    </ul>
-                </div>
-            </div>
-            <h3>Competitors</h3>
-            <div class="competitors-grid">
-                <div class="competitor-card">
-                    <img src="assets/images/goalpact/goalswon.png" alt="Goals Won">
-                    <div>
-                        <h4>GoalsWon</h4>
-                        <ul>
-                            <li>Task tracking, goal setting, and coaching.</li>
-                            <li>Helps users stay organized and motivated. </li>
-                            <li>Provides structured reminders, personalized insights, and accountability systems.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="competitor-card">
-                    <img src="assets/images/goalpact/buddycrush.png" alt="Buddy Crush">
-                    <div>
-                        <h4>Buddy Crush</h4>
-                        <ul>
-                            <li>Focuses on social accountability</li>
-                            <li>Users can create or join groups, monitor each other’s progress, and engage in friendly
-                                competition via leaderboards.</li>
-                            <li>Gamifies habit-building</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="competitor-card">
-                    <img src="assets/images/goalpact/squad.png" alt="Squad">
-                    <div>
-                        <h4>Squad</h4>
-                        <ul>
-                            <li>Focuses on short-term group challenges (1-4 weeks). </li>
-                            <li>Motivates users through daily check-ins and a credit system that rewards progress and
-                                penalizes inactivity.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="competitor-card">
-                    <img src="assets/images/goalpact/strides.png" alt="Strides">
-                    <div>
-                        <h4>Strides</h4>
-                        <ul>
-                            <li>Habit formation and goal tracking, customizable tools to monitor progress and build
-                                consistency over time.</li>
-                            <li>Supports daily tracking and provides visual progress updates.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>GoalPact's Edge</h2>
-            <p>GoalPact offers a more comprehensive, interactive, and personalized experience.</p>
-            <h4>GoalPact...</h4>
-            <ul>
-                <li>Prioritizes peer-based accountability through partnerships that foster meaningful connections.</li>
-                <li>Encourages collaboration through shared dashboards and non-competitive motivation.</li>
-                <li>Breaks down complex, long-term objectives into manageable milestones with our engaging visualization
-                    pathway.</li>
-                <li>Provides tools for sustained progress, combining individualized support with the option to engage in
-                    community groups.</li>
-                <li>Creates a holistic, user-centered experience that empowers users to stay motivated and connected to
-                    their
-                    goals. </li>
-            </ul>
-            <h3>Ethical Considerations</h3>
-            <h4>Potential Harms</h4>
-            <ul>
-                <li>Social comparisons on traditional platforms can reduce motivation and well-being by emphasizing
-                    unattainable standards. (Meier & Johnson, 2022).</li>
-                <li>Overly idealized content can overwhelm users, leading to feelings of inadequacy and discouragement
-                    (Meier et
-                    al., 2020).</li>
-            </ul>
-            <h4>How GoalPact Addresses These:</h4>
-            <ul>
-                <li>Focuses on personal progress and growth through customizable visualization pathways, forming
-                    communities,
-                    and accountability partnerships.</li>
-                <li>Community spaces are designed for sharing advice and resources, not wins or losses, minimizing
-                    comparison-driven envy.</li>
-                <li>Spreads encouraging reminders throughout the app to speak to how everyone’s journey is different and
-                    not
-                    always linear.</li>
-                <li>Users are in charge of the content they seek out, such as viewing others’ profiles and looking at
-                    their
-                    completed pathways/accomplishments.</li>
-                <li>Emphasize to users that viewing others’ pathways is meant to give users ideas on how they can
-                    outline their own journey, and is not meant to be displayed or viewed in a competitive manner.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Reflection</h2>
-            <p>Working on GoalPact allowed me to explore how user research and theoretical frameworks shape meaningful
-                design. Insights from diverse participants, such as the need for accountability and motivational tools,
-                guided key features like the Goal Pathway and dashboards. The iterative design process expanded my
-                understanding of how features can holistically address user pain points, while UX writing and branding
-                refined the experience to feel supportive and engaging. By applying frameworks like Common Bond/Identity
-                Theory and Amy Jo Kim’s principles, I ensured the platform fostered both individual connections and a
-                sense of community. This process deepened my skills in research-driven design and reinforced my passion
-                for creating impactful user experiences.</p>
-        </section>
-        <section>
-            <h2>References</h2>
-            <ol>
-                <li>Kim, Amy. J. (n.d.). Community Analysis Template: 9 Timeless Design Principles for
-                    Community-Building [Handout]. SI 529: Online Communities. Retrieved from Canvas.</li>
-                <li>Meier, A., & Johnson, B. K. (2022). Social comparison and envy on social media: A critical review.
-                    Current
-                    Opinion in Psychology, 45, 101289. Retrieved from Canvas.</li>
-                <li>Meier, A., Gilbert, A., Börner, S., & Possler, D. (2020). Instagram Inspiration: How Upward
-                    Comparison on
-                    Social Network Sites Can Contribute to Well-Being. Journal of Communication, 721–743. Retrieved from
-                    Canvas.</li>
-                <li>Ren, Y., Kraut, R., & Kiesler, S. (2007). Applying Common Identity and Bond Theory to Design of
-                    Online
-                    Communities. Organization Studies, 28(3), 377–408. Retrieved from Canvas.</li>
-            </ol>
-        </section>
-    </div>
+                        their
+                        goals. </li>
+                </ul>
+                <h3>Ethical Considerations</h3>
+                <h4>Potential Harms</h4>
+                <ul>
+                    <li>Social comparisons on traditional platforms can reduce motivation and well-being by emphasizing
+                        unattainable standards. (Meier & Johnson, 2022).</li>
+                    <li>Overly idealized content can overwhelm users, leading to feelings of inadequacy and
+                        discouragement
+                        (Meier et
+                        al., 2020).</li>
+                </ul>
+                <h4>How GoalPact Addresses These:</h4>
+                <ul>
+                    <li>Focuses on personal progress and growth through customizable visualization pathways, forming
+                        communities,
+                        and accountability partnerships.</li>
+                    <li>Community spaces are designed for sharing advice and resources, not wins or losses, minimizing
+                        comparison-driven envy.</li>
+                    <li>Spreads encouraging reminders throughout the app to speak to how everyone’s journey is different
+                        and
+                        not
+                        always linear.</li>
+                    <li>Users are in charge of the content they seek out, such as viewing others’ profiles and looking
+                        at
+                        their
+                        completed pathways/accomplishments.</li>
+                    <li>Emphasize to users that viewing others’ pathways is meant to give users ideas on how they can
+                        outline their own journey, and is not meant to be displayed or viewed in a competitive manner.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Reflection</h2>
+                <p>Working on GoalPact allowed me to explore how user research and theoretical frameworks shape
+                    meaningful
+                    design. Insights from diverse participants, such as the need for accountability and motivational
+                    tools,
+                    guided key features like the Goal Pathway and dashboards. The iterative design process expanded my
+                    understanding of how features can holistically address user pain points, while UX writing and
+                    branding
+                    refined the experience to feel supportive and engaging. By applying frameworks like Common
+                    Bond/Identity
+                    Theory and Amy Jo Kim’s principles, I ensured the platform fostered both individual connections and
+                    a
+                    sense of community. This process deepened my skills in research-driven design and reinforced my
+                    passion
+                    for creating impactful user experiences.</p>
+            </section>
+            <section>
+                <h2>References</h2>
+                <ol>
+                    <li>Kim, Amy. J. (n.d.). Community Analysis Template: 9 Timeless Design Principles for
+                        Community-Building [Handout]. SI 529: Online Communities. Retrieved from Canvas.</li>
+                    <li>Meier, A., & Johnson, B. K. (2022). Social comparison and envy on social media: A critical
+                        review.
+                        Current
+                        Opinion in Psychology, 45, 101289. Retrieved from Canvas.</li>
+                    <li>Meier, A., Gilbert, A., Börner, S., & Possler, D. (2020). Instagram Inspiration: How Upward
+                        Comparison on
+                        Social Network Sites Can Contribute to Well-Being. Journal of Communication, 721–743. Retrieved
+                        from
+                        Canvas.</li>
+                    <li>Ren, Y., Kraut, R., & Kiesler, S. (2007). Applying Common Identity and Bond Theory to Design of
+                        Online
+                        Communities. Organization Studies, 28(3), 377–408. Retrieved from Canvas.</li>
+                </ol>
+            </section>
+        </div>
+    </main>
 </body>
 
 </html>

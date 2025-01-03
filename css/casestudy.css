@@ -1,3 +1,32 @@
+main {
+    font-family: "ivystyle-sans", sans-serif;
+}
+
+.overview {
+    margin: 0 auto;
+    width: 1320px;
+    max-width:100%;
+}
+
+@media (max-width: 1319px) {
+    .overview {
+        margin: 0 1em;
+    }
+}
+
+.overview>h1 {
+    font-size: 48px; /* Larger font size for the name */
+    font-weight: 700; /* Bold the name */
+    color: #2D2F63;
+    margin-bottom: 40px; /* Space below the name */
+    position: relative; /* Allow positioning adjustments */
+    top: 20px; /* Move the name slightly up */
+}
+
+.overview>p {
+    color: #2D2F63;
+}
+
 .case-study {
     justify-content: space-between;
     padding: 40px 60px;
@@ -6,8 +35,6 @@
     margin: 40px auto;
     max-width: 1200px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: "ivystyle-sans", sans-serif;
-
 }
 
 .case-study img {
