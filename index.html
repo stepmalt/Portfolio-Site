@@ -9,59 +9,12 @@
     <link rel="stylesheet" href="https://use.typekit.net/yzq4uvx.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
-    <script src="index.js"></script>
+    <script type="module" src="header.js"></script>
 </head>
 
 <body>
     <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="assets/graphics/smlogo.svg" alt="SM Logo">
-        </div>
-        <nav>
-            <div class="navitems">
-                <a href="index.html">Home</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Projects</button>
-                    <div class="dropdown-content">
-                        <a href="tdpr.html">TDPR</a>
-                        <a href="dfn.html">DFN</a>
-                        <a href="goalpact.html">GoalPact</a>
-                        <a href="glassdoor.html">Glassdoor</a>
-                    </div>
-                </div>
-                <a href="resume.html">Resume</a>
-                <a class="navitem" href="https://linkedin.com" target="_blank"><img src="assets/graphics/linkedin.svg"
-                        alt="LinkedIn"></a>
-                <a class="navitem" href="mailto:youremail@example.com"><img src="assets/graphics/email.svg"
-                        alt="Email"></a>
-                <a class="navitem" href="https://medium.com" target="_blank"><img src="assets/graphics/medium.svg" alt="Medium"></a>
-            </div>
-            <img id="hamburger" class="hamburger" src="assets/graphics/hamburger.svg" onclick="openMobileNav()" />
-            <div id="mobilenav" class="navitems2 closed">
-                <a href="index.html">Home</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Projects</button>
-                    <div class="dropdown-content">
-                        <a href="tdpr.html">TDPR</a>
-                        <a href="dfn.html">DFN</a>
-                        <a href="goalpact.html">GoalPact</a>
-                        <a href="glassdoor.html">Glassdoor</a>
-                    </div>
-                </div>
-                <a href="resume.html">Resume</a>
-                <div style="align-self: center; margin-top:auto; margin-bottom:6em;">
-                    <a class="navitem" href="https://linkedin.com" target="_blank"><img
-                            src="assets/graphics/linkedin.svg" alt="LinkedIn"></a>
-                    <a class="navitem" href="mailto:youremail@example.com"><img src="assets/graphics/email.svg"
-                            alt="Email"></a>
-                            <a class="navitem" href="https://medium.com" target="_blank"><img src="assets/graphics/medium.svg" alt="Medium"></a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-
+    <header-component></header-component>
     <!-- Main Content -->
     <main onclick="closeMobileView()">
         <!-- Hero Section -->

@@ -30,6 +30,10 @@ figcaption {
     }
 }
 
+.overview {
+    text-align: center;
+}
+
 .overview>h1 {
     font-size: 48px; /* Larger font size for the name */
     font-weight: 700; /* Bold the name */

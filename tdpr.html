@@ -9,71 +9,19 @@
     <link rel="stylesheet" href="https://use.typekit.net/yzq4uvx.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/casestudy.css">
-    <script src="index.js"></script>
+    <script type="module" src="header.js"></script>
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="assets/graphics/smlogo.svg" alt="SM Logo">
-        </div>
-        <nav>
-            <div class="navitems">
-                <a href="index.html">Home</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Projects</button>
-                    <div class="dropdown-content">
-                        <a href="tdpr.html">TDPR</a>
-                        <a href="dfn.html">DFN</a>
-                        <a href="goalpact.html">GoalPact</a>
-                        <a href="glassdoor.html">Glassdoor</a>
-                    </div>
-                </div>
-                <a href="resume.html">Resume</a>
-                <a class="navitem" href="https://linkedin.com" target="_blank"><img src="assets/graphics/linkedin.svg"
-                        alt="LinkedIn"></a>
-                <a class="navitem" href="mailto:youremail@example.com"><img src="assets/graphics/email.svg"
-                        alt="Email"></a>
-                <a class="navitem" href="https://medium.com" target="_blank"><img src="assets/graphics/medium.svg"
-                        alt="Medium"></a>
-            </div>
-            <img id="hamburger" class="hamburger" src="assets/graphics/hamburger.svg" onclick="openMobileNav()" />
-
-            <div id="mobilenav" class="navitems2 closed">
-                <a href="index.html">Home</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Projects</button>
-                    <div class="dropdown-content">
-                        <a href="tdpr.html">TDPR</a>
-                        <a href="dfn.html">DFN</a>
-                        <a href="goalpact.html">GoalPact</a>
-                        <a href="glassdoor.html">Glassdoor</a>
-                    </div>
-                </div>
-
-                <a href="resume.html">Resume</a>
-                <div style="align-self: center; margin-top:auto; margin-bottom:6em;">
-                    <a class="navitem" href="https://linkedin.com" target="_blank"><img
-                            src="assets/graphics/linkedin.svg" alt="LinkedIn"></a>
-                    <a class="navitem" href="mailto:youremail@example.com"><img src="assets/graphics/email.svg"
-                            alt="Email"></a>
-                    <a class="navitem" href="https://medium.com" target="_blank"><img src="assets/graphics/medium.svg"
-                            alt="Medium"></a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main onclick="closeMobileView()">
+    <header-component></header-component>
+    <main>
         <div class="overview">
             <h1>The Donovan’s Piano Room: Information Flow, Voice, and Tone</h1>
-            <div style="display: flex; justify-content: space-between;">
-                <p><b>Role:</b> User Researcher, Content Designer</p>
-                <p><b>Client:</b> The Donovan’s Piano Room</p>
-                <p><b>Duration:</b> 6 weeks</p>
-                <p><b>Tools:</b> Usertesting.com, Figma</p>
-                <p><b>Methods:</b> Usability Testing</p>
-            </div>
+                <p><b>Role:</b> User Researcher, Content Designer
+                <b style="margin-left: 1em;">Client:</b> The Donovan’s Piano Room
+                <b style="margin-left: 1em;">Duration:</b> 6 weeks
+                <b style="margin-left: 1em;">Tools:</b> Usertesting.com, Figma
+                <b style="margin-left: 1em;">Methods:</b> Usability Testing</p>
         </div>
         <div class="case-study">
             <section>
@@ -141,7 +89,7 @@
                     </li>
                 </ul>
                 <figure>
-                    <img src="assets/images/tdpr/usersentiment.png">
+                    <img loading="lazy" src="assets/images/tdpr/usersentiment.png">
                     <figcaption>User sentiment words after initial site exploration, with circle size reflecting the
                         frequency of mentions and highlighting key themes in user impressions.</figcaption>
                 </figure>
@@ -194,7 +142,7 @@
                     </li>
                 </ul>
                 <figure>
-                    <img src="assets/images/tdpr/whyus.png">
+                    <img loading="lazy" src="assets/images/tdpr/whyus.png">
                     <figcaption class="center">Current (live) website: Why Us section</figcaption>
                 </figure>
                 <h3>3. Student Engagement and Interactive Features</h3>
@@ -228,7 +176,7 @@
                         effectively works for children.
                     </li>
                 </ul>
-                <img src="assets/images/tdpr/agesupport.png">
+                <img loading="lazy" src="assets/images/tdpr/agesupport.png">
                 <h3>4. Age-Specific Content</h3>
                 <h4>Findings</h4>
                 <ul>
@@ -256,9 +204,9 @@
                     changes were incorporated into the redesign pitch.
                 </p>
                 <h3>Initial Design</h3>
-                <img src="assets/images/tdpr/initialdesign.png">
+                <img loading="lazy" src="assets/images/tdpr/initialdesign.png">
                 <h3>My Redesign</h3>
-                <img src="assets/images/tdpr/redesign.png">
+                <img loading="lazy" src="assets/images/tdpr/redesign.png">
                 <h3>Key Revisions</h3>
                 <h4>1. Updated Copy and Tone</h4>
                 <ul>
@@ -272,11 +220,11 @@
                 <div class="imageblock">
                     <div style="padding: 0 2em;">
                         <h4 class="center">Initial</h4>
-                        <img src="assets/images/tdpr/initialcopy.png">
+                        <img loading="lazy" src="assets/images/tdpr/initialcopy.png">
                     </div>
                     <div style="padding: 0 2em;">
                         <h4 class="center">Redesign</h4>
-                        <img style="padding-top:50px;" src="assets/images/tdpr/redesigncopy.png">
+                        <img loading="lazy" style="padding-top:50px;" src="assets/images/tdpr/redesigncopy.png">
                     </div>
                 </div>
                 <h4>2. Visual Navigation Map</h4>
@@ -292,11 +240,11 @@
                 <div class="imageblock">
                     <div style="padding: 0 2em;">
                         <h4 class="center">Initial</h4>
-                        <img src="assets/images/tdpr/initialmap.png">
+                        <img loading="lazy" src="assets/images/tdpr/initialmap.png">
                     </div>
                     <div style="padding: 0 2em;">
                         <h4 class="center">Redesign</h4>
-                        <img src="assets/images/tdpr/redesignmap.png">
+                        <img loading="lazy" src="assets/images/tdpr/redesignmap.png">
                     </div>
                 </div>
                 <h4>3. Enhanced Call-to-Actions (CTAs)</h4>
@@ -311,13 +259,13 @@
                 <div class="imageblock">
                     <div style="padding: 0 2em;">
                         <h4 class="center">Initial</h4>
-                        <img src="assets/images/tdpr/initialcta.png">
+                        <img loading="lazy" src="assets/images/tdpr/initialcta.png">
                     </div>
                     <div style="padding: 0 2em;">
                         <h4 class="center">Redesign</h4>
                         <div style="display: flex; align-items: center;">
-                            <img src="assets/images/tdpr/redesigncta1.png">
-                            <img style="height:150px; margin-left: 1em;" src="assets/images/tdpr/redesigncta2.png">
+                            <img loading="lazy" src="assets/images/tdpr/redesigncta1.png">
+                            <img loading="lazy" style="height:150px; margin-left: 1em;" src="assets/images/tdpr/redesigncta2.png">
                         </div>
                     </div>
                 </div>
@@ -349,7 +297,7 @@
                     <li>Ensure the content is easily understood by parents and exciting for children.
                     </li>
                 </ul>
-                <img src="assets/images/tdpr/goals.png">
+                <img loading="lazy" src="assets/images/tdpr/goals.png">
             </section>
             <section>
                 <h2>Reflection</h2>
@@ -363,10 +311,10 @@
     </main>
     <div class="bottombuttons">
         <a href="glassdoor.html">
-            <img src="assets/graphics/previous.svg">
+            <img loading="lazy" src="assets/graphics/previous.svg">
         </a>
         <a href="dfn.html">
-            <img src="assets/graphics/next.svg">
+            <img loading="lazy" src="assets/graphics/next.svg">
         </a>
     </div>
 </body>

@@ -9,62 +9,13 @@
     <link rel="stylesheet" href="https://use.typekit.net/yzq4uvx.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/casestudy.css">
-    <script src="index.js"></script>
+    <script type="module" src="header.js"></script>
 </head>
 
 <body>
     <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="assets/graphics/smlogo.svg" alt="SM Logo">
-        </div>
-        <nav>
-            <div class="navitems">
-                <a href="index.html">Home</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Projects</button>
-                    <div class="dropdown-content">
-                        <a href="tdpr.html">TDPR</a>
-                        <a href="dfn.html">DFN</a>
-                        <a href="goalpact.html">GoalPact</a>
-                        <a href="glassdoor.html">Glassdoor</a>
-                    </div>
-                </div>
-                <a href="resume.html">Resume</a>
-                <a class="navitem" href="https://linkedin.com" target="_blank"><img src="assets/graphics/linkedin.svg"
-                        alt="LinkedIn"></a>
-                <a class="navitem" href="mailto:youremail@example.com"><img src="assets/graphics/email.svg"
-                        alt="Email"></a>
-                <a class="navitem" href="https://medium.com" target="_blank"><img src="assets/graphics/medium.svg"
-                        alt="Medium"></a>
-            </div>
-            <img id="hamburger" class="hamburger" src="assets/graphics/hamburger.svg" onclick="openMobileNav()" />
-
-            <div id="mobilenav" class="navitems2 closed">
-                <a href="index.html">Home</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Projects</button>
-                    <div class="dropdown-content">
-                        <a href="tdpr.html">TDPR</a>
-                        <a href="dfn.html">DFN</a>
-                        <a href="goalpact.html">GoalPact</a>
-                        <a href="glassdoor.html">Glassdoor</a>
-                    </div>
-                </div>
-
-                <a href="resume.html">Resume</a>
-                <div style="align-self: center; margin-top:auto; margin-bottom:6em;">
-                    <a class="navitem" href="https://linkedin.com" target="_blank"><img
-                            src="assets/graphics/linkedin.svg" alt="LinkedIn"></a>
-                    <a class="navitem" href="mailto:youremail@example.com"><img src="assets/graphics/email.svg"
-                            alt="Email"></a>
-                    <a class="navitem" href="https://medium.com" target="_blank"><img src="assets/graphics/medium.svg"
-                            alt="Medium"></a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main onclick="closeMobileView()">
+    <header-component></header-component>
+    <main>
         <div class="overview">
             <h1>Glassdoor: User Research Sponsored Project</h1>
             <p><b>Team Members:</b> Stephanie Maltese, <a href="https://www.linkedin.com/in/iris-sirui-wang/">Iris
@@ -75,12 +26,10 @@
                 Manager, Product Design), and <a href="https://www.linkedin.com/in/lauren-lindeen/">Lauren Lindeen</a>
                 (Senior
                 Lead User Experience Researcher)</p>
-            <div style="display: flex;">
                 <p><b>Methods:</b> User Interviews, Usability Testing, Heuristic Evaluation, Surveys, Comparative
                     Analysis,
-                    Affinity Mapping</p>
-                <p style="margin-left: 1em;"><b>Timeline:</b> 11 Weeks</p>
-            </div>
+                    Affinity Mapping
+                <b style="margin-left: 1em;">Timeline:</b> 11 Weeks</p>
         </div>
         <div class="case-study">
             <section>
@@ -113,10 +62,10 @@
     </main>
     <div class="bottombuttons">
         <a href="goalpact.html">
-            <img src="assets/graphics/previous.svg">
+            <img loading="lazy" src="assets/graphics/previous.svg">
         </a>
         <a href="tdpr.html">
-            <img src="assets/graphics/next.svg">
+            <img loading="lazy" src="assets/graphics/next.svg">
         </a>
     </div>
 </body>
