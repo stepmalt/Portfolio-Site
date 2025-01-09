@@ -47,6 +47,7 @@ nav a:hover {
 
 .navitem:hover {
     -webkit-filter: brightness(80%);
+    filter: brightness(80%);
 }
 
 /* Dropdown Styling */

@@ -237,6 +237,11 @@ li {
     margin-right: 0.5em;
 }
 
+.bottombuttons a:hover {
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%);
+}
+
 @media (max-width: 768px) {
     .competitors-grid {
         display: grid;
