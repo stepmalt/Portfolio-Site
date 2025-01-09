@@ -18,12 +18,41 @@
     <main>
         <div class="overview">
             <h1>GoalPact: Empowering Goal Achievement through Accountability and Visualization</h1>
-            <p><b>Role:</b> User Researcher, Content Designer</p>
-            <p><b>Duration:</b> 6 weeks</p>
-            <p><b>Tools:</b> Usertesting.com, Figma</p>
-            <p><b>Methods:</b> Survey, Prototyping, User Scenarios, Competitive Analysis</p>
+            <p><b>Role:</b> User Researcher, Content Designer
+            <b style="margin-left: 1em;">Duration:</b> 6 weeks
+            <b style="margin-left: 1em;">Tools:</b> Usertesting.com, Figma
+            <b style="margin-left: 1em;">Methods:</b> Survey, Prototyping, User Scenarios, Competitive Analysis</p>
         </div>
         <div class="case-study">
+            <input type="checkbox" id="sectionwidth">
+            <label for="sectionwidth">Shrink Content</label>
+            <script>
+                sectionwidth.addEventListener('click', (event) => {
+                    if (event.target.checked) {
+                        let sections = document.getElementsByTagName("section")
+                        for (i=0; i<sections.length;i++) {
+                            sections[i].setAttribute("style", "max-width: 900px;margin:0 auto;");
+                        }
+                        console.log(sections)
+                        // document.section.setAttribute("style", "max-width: 900px;margin:0 auto;")
+                    } else {
+                        let sections = document.getElementsByTagName("section")
+                        for (i=0; i<sections.length;i++) {
+                            sections[i].setAttribute("style", "");
+                        }
+                        console.log(sections)
+                    }
+                })
+        //         document.addEventListener('click', (event) => {
+        //     const headerComponent = document.querySelector('header-component');
+        //     const clickedInsideHeader = event.composedPath().includes(headerComponent);
+            
+        //     if (!clickedInsideHeader && headerComponent.isOpen) {
+        //         headerComponent.closeMobileView();
+        //     }
+        // });
+
+            </script>
             <section>
                 <h2>Introduction</h2>
                 <p>In today’s fast-paced world, it’s easy for personal goals to take a back seat to daily
@@ -58,60 +87,44 @@
                 <p>Participants valued encouragement, shared tips/resources, and progress updates within goal-specific
                     communities
                     but expressed mixed feelings about public engagement.</p>
-                <img src="assets/images/goalpact/goals.png" />
+                <img src="assets/images/goalpact/goals.png" alt="goals" />
                 <h3>Progress Impact</h3>
                 <p>All participants struggle to make progress toward their goals, and an alarming 85.8% of participants
                     indicated
                     that it impacts their mood and well-being.</p>
-                <img src="assets/images/goalpact/impact.png" />
+                <img src="assets/images/goalpact/impact.png" alt="progress impact" />
                 <h3>Accountability Needs</h3>
                 <p>Many participants expressed interest in forming accountability partnerships, emphasizing qualities
                     like
                     encouragement, shared interests, and regular check-ins. These insights highlight the importance of
                     fostering
                     meaningful, goal-oriented connections within the app.</p>
-                <img src="assets/images/goalpact/needs1.png" />
-                <img src="assets/images/goalpact/needs2.png" />
-                <div style="display:flex; ">
-                    <div>
+                <img src="assets/images/goalpact/needs1.png" alt="interest having an accountability" />
+                <img src="assets/images/goalpact/needs2.png" alt="most important accountability"/>
+                <div class="text-grid">
+                    <div class="text-block">
                         <h3>Community Insights</h3>
-                        <p>Participants valued encouragement, shared tips/resources, and progress updates within
-                            goal-specific
-                            communities
-                            but expressed mixed feelings about public engagement.</p>
-                        <h3>Structured Support Preferences</h3>
-                        <p>Most participants preferred moderate structure when working toward goals, favoring clear
-                            guidelines
-                            but
-                            with
-                            flexibility for individual needs.</p>
-                        <h3>Interest in Motivational Tools</h3>
-                        <p>Tools like reminders, progress visuals, and motivational quotes were frequently mentioned as
-                            desirable
-                            features
-                            to keep users engaged.</p>
+                        <p>Participants valued encouragement, shared tips/resources, and progress updates within goal-specific communities but expressed mixed feelings about public engagement.</p>
                     </div>
-                    <div>
+                    <div class="text-block">
                         <h3>Tool Limitations</h3>
-                        <p>Commonly used tools (e.g., Google Calendar, Notion) lacked interactivity and personalized
-                            support,
-                            underscoring
-                            the demand for a more integrated and intuitive platform.</p>
-
+                        <p>Commonly used tools (e.g., Google Calendar, Notion) lacked interactivity and personalized support, underscoring the demand for a more integrated and intuitive platform.</p>
+                    </div>
+                    <div class="text-block">
+                        <h3>Structured Support Preferences</h3>
+                        <p>Most participants preferred moderate structure when working toward goals, favoring clear guidelines but with flexibility for individual needs.</p>
+                    </div>
+                    <div class="text-block">
                         <h3>Celebration and Rewards</h3>
-                        <p>Participants emphasized the importance of recognizing milestones, with personal rewards and
-                            progress
-                            summaries
-                            being the most motivating.</p>
-
+                        <p>Participants emphasized the importance of recognizing milestones, with personal rewards and progress summaries being the most motivating.</p>
+                    </div>
+                    <div class="text-block">
+                        <h3>Interest in Motivational Tools</h3>
+                        <p>Tools like reminders, progress visuals, and motivational quotes were frequently mentioned as desirable features to keep users engaged.</p>
+                    </div>
+                    <div class="text-block">
                         <h3>Participant Demographics</h3>
-                        <p>The research group consisted of a diverse range of participants, spanning different ages
-                            (18-55+),
-                            professional
-                            backgrounds, and personal goals. This diversity ensured comprehensive insights that shaped
-                            GoalPact’s
-                            inclusive
-                            design.</p>
+                        <p>The research group consisted of a diverse range of participants, spanning different ages (18-55+), professional backgrounds, and personal goals. This diversity ensured comprehensive insights that shaped GoalPact’s inclusive design.</p>
                     </div>
                 </div>
             </section>
@@ -127,8 +140,8 @@
                     user
                     flows and navigation.</p>
                 <div class="imageblock">
-                    <img src="assets/images/goalpact/lofi1.png" />
-                    <img src="assets/images/goalpact/lofi2.png" />
+                    <img src="assets/images/goalpact/lofi1.png" alt="low fidelity pathway sketch"/>
+                    <img src="assets/images/goalpact/lofi2.png" alt="low fidelity community sketch"/>
                 </div>
                 <h3>Mid-Fidelity Refinement</h3>
                 <p>During the mid-fidelity phase, additional ideas for features emerged beyond the original low-fidelity
@@ -138,16 +151,16 @@
                     features. The mid-fidelity prototypes refined layouts and added key elements like interactive
                     milestones, buddy dashboards, and enhanced usability features that aligned with user needs.</p>
                 <div class="imageblock">
-                    <img src="assets/images/goalpact/mifimatch.png" />
-                    <img src="assets/images/goalpact/mifipath.png" />
+                    <img src="assets/images/goalpact/mifimatch.png" alt="mid fidelity accountability preferences" />
+                    <img src="assets/images/goalpact/mifipath.png" alt="mid fidelity pathway" />
                 </div>
                 <div class="imageblock">
-                    <img src="assets/images/goalpact/mificommunity.png" />
-                    <img src="assets/images/goalpact/mifibuddy2.png" />
+                    <img src="assets/images/goalpact/mificommunity.png" alt="mid fidelity community timeline" />
+                    <img src="assets/images/goalpact/mifibuddy2.png" alt="mid fidelity buddy timeline" />
                 </div>
                 <div class="imageblock">
-                    <img src="assets/images/goalpact/mifidash2.png" />
-                    <img src="assets/images/goalpact/mifidash1.png" />
+                    <img src="assets/images/goalpact/mifidash2.png" alt="mid fidelity buddy dashboard" />
+                    <img src="assets/images/goalpact/mifidash1.png" alt="mid fidelity community dashboard" />
                 </div>
                 <h3>High-Fidelity Wireframes</h3>
                 <p>In the high-fidelity phase, I refined the visual and textual elements to align with the platform’s
@@ -235,13 +248,13 @@
                         <div class="imageblocktext2">
                             <h5>Key elements:</h5>
                             <div class="element">
-                                <img src="assets/graphics/goalpath/step.svg" />
+                                <img src="assets/graphics/goalpath/step.svg" alt="step icon" />
                                 <p><b>Step:</b> The yellow dot represents a step along the user’s journey to their
                                     milestone. These are
                                     smaller, incremental tasks or components that make up a whole milestone.</p>
                             </div>
                             <div class="element">
-                                <img src="assets/graphics/goalpath/milestone.svg" />
+                                <img src="assets/graphics/goalpath/milestone.svg" alt="milestone icon" />
                                 <p><b>Milestone:</b>
                                     The squares represents milestones. These are major achievements or
                                     significant points along the user’s journey. Reaching these unlocks motivational
@@ -250,16 +263,16 @@
                                     animation, depending on their preferences. </p>
                             </div>
                             <div class="element">
-                                <img style="margin-left: 0;" src="assets/graphics/goalpath/star.svg" />
+                                <img style="margin-left: 0;" src="assets/graphics/goalpath/star.svg" alt="star icon" />
                                 <p><b>Star:</b> Represents the final milestone.</p>
                             </div>
                             <div class="element">
-                                <img src="assets/graphics/goalpath/avatar.svg" />
+                                <img src="assets/graphics/goalpath/avatar.svg" alt="avatar icon" />
                                 <p><b>Avatar:</b> Users can select an avatar to represent themselves along the journey.
                                 </p>
                             </div>
                             <div class="element">
-                                <img src="assets/graphics/goalpath/present.svg" />
+                                <img src="assets/graphics/goalpath/present.svg" alt="present icon" />
                                 <p><b>Present:</b> At the end, users unlock their chosen celebration method.</p>
                             </div>
                         </div>
@@ -393,7 +406,7 @@
                     meaningful connections through thoughtful design.</p>
                 <div class="imageblock">
                     <div>
-                        <img style="width: 200px; margin: auto;" src="assets/images/goalpact/maya.png" />
+                        <img style="width: 200px; margin: auto;" src="assets/images/goalpact/maya.png" alt="maya cartoon picture" />
                         <h3>Maya, 32</h3>
                         <ul class="thinlist">
                             <li>Aspiring novelist</li>
@@ -407,7 +420,7 @@
                         </ul>
                     </div>
                     <div>
-                        <img style="width: 200px; margin: auto;" src="assets/images/goalpact/jordan.png" />
+                        <img style="width: 200px; margin: auto;" src="assets/images/goalpact/jordan.png" alt="jordan cartoon picture" />
                         <h3>Jordan, 27</h3>
                         <ul class="thinlist">
                             <li>Freelance photographer</li>
