@@ -242,6 +242,18 @@ li {
     filter: brightness(80%);
 }
 
+.imageblock2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+    max-width: 100%;
+    max-height: auto;
+}
+
+.imageblock2 h3 {
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .competitors-grid {
         display: grid;
@@ -335,5 +347,13 @@ li {
     .imagegrid2 .imageblocktext2:last-of-type {
         grid-column: 1;
         grid-row: 3;
+    }
+
+    .imageblock2 {
+        display: inline-block;
+        justify-content: center;
+        margin-bottom: 3em;
+        max-width: 100%;
+        max-height: auto;
     }
 }
