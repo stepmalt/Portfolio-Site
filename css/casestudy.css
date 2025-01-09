@@ -20,6 +20,10 @@ h5 {
     max-width:100%;
 }
 
+figcaption {
+    margin-top: 1em;
+}
+
 @media (max-width: 1319px) {
     .overview {
         margin: 0 1em;
@@ -36,6 +40,10 @@ h5 {
 }
 
 .overview>p {
+    color: #2D2F63;
+}
+
+.overview>div>p {
     color: #2D2F63;
 }
 
@@ -208,6 +216,21 @@ li {
 
 .competitor-card h4 {
     margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.bottombuttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.bottombuttons a {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 @media (max-width: 768px) {
