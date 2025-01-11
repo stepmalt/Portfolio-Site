@@ -88,13 +88,7 @@ figcaption {
     color: #2d2f63;
 }
 
-.case-study p {
-    margin: 0;
-    line-height: 1.5;
-    color: #333;
-}
-
-.case-study li {
+.case-study p, li, figcaption {
     margin: 0;
     line-height: 1.5;
     color: #333;
