@@ -5,52 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephanie Maltese Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/smlogo.ico">
     <link rel="stylesheet" href="https://use.typekit.net/yzq4uvx.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
+    <script type="module" src="header.js"></script>
 </head>
 
 <body>
     <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="assets/graphics/smlogo.svg" alt="SM Logo">
-        </div>
-        <nav>
-            <div class="navitems">
-                <a href="index.html">Home</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Projects</button>
-                    <div class="dropdown-content">
-                        <a href="project1.html">TDPR</a>
-                        <a href="project2.html">DFN</a>
-                        <a href="project3.html">GoalPact</a>
-                        <a href="project4.html">Glassdoor</a>
-                    </div>
-                </div>
-                <a href="resume.html">Resume</a>
-                <a class="navitem" href="https://linkedin.com" target="_blank"><img src="assets/graphics/linkedin.svg"
-                        alt="LinkedIn"></a>
-                <a class="navitem" href="mailto:youremail@example.com"><img src="assets/graphics/email.svg"
-                        alt="Email"></a>
-                <a class="navitem" href="https://medium.com" target="_blank"><svg width="62" height="53"
-                        viewBox="0 0 62 53" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <rect width="62" height="53" rx="11" fill="#E9E4EF" />
-                        <rect x="5" y="7" width="53" height="39" fill="url(#pattern0_91_75)" />
-                        <defs>
-                            <pattern id="pattern0_91_75" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use xlink:href="#image0_91_75"
-                                    transform="matrix(0.000266809 0 0 0.000362587 0 -0.00943409)" />
-                            </pattern>
-                            <image id="image0_91_75" href="assets/graphics/mediumlogo.png" width="3748" height="2810" />
-                        </defs>
-                    </svg></a>
-            </div>
-        </nav>
-    </header>
-
-
+    <header-component></header-component>
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
@@ -78,28 +42,28 @@
             <h2 class="projectsheader" style="text-align: center;">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <a href="project1.html">
+                    <a href="tdpr.html">
                         <img src="assets/images/tdprlogo.png" alt="The Donovan’s Piano Room">
                     </a>
                     <h3>The Donovan’s Piano Room</h3>
                     <p>UX Research and UX Writing</p>
                 </div>
                 <div class="project-card">
-                    <a href="project2.html">
+                    <a href="dfn.html">
                         <img src="assets/images/dfnlogo.png" alt="Dyslexia Foundation Nigeria">
                     </a>
                     <h3>Dyslexia Foundation Nigeria</h3>
                     <p>UX Research</p>
                 </div>
                 <div class="project-card">
-                    <a href="project3.html">
+                    <a href="goalpact.html">
                         <img src="assets/images/goalpactlogo.png" alt="GoalPact">
                     </a>
                     <h3>GoalPact</h3>
                     <p>UX Research, Design, and Writing</p>
                 </div>
                 <div class="project-card">
-                    <a href="project4.html">
+                    <a href="glassdoor.html">
                         <img src="assets/images/glassdoorlogo.png" alt="Glassdoor">
                     </a>
                     <h3>Glassdoor</h3>
@@ -115,20 +79,7 @@
             <a class="navitem" href="https://linkedin.com" target="_blank"><img src="assets/graphics/linkedin.svg"
                     alt="LinkedIn"></a>
             <a class="navitem" href="mailto:youremail@example.com"><img src="assets/graphics/email.svg" alt="Email"></a>
-            <a class="navitem" href="https://medium.com" target="_blank">
-                <svg width="62" height="53" viewBox="0 0 62 53" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="62" height="53" rx="11" fill="#E9E4EF" />
-                    <rect x="5" y="7" width="53" height="39" fill="url(#pattern0_91_75)" />
-                    <defs>
-                        <pattern id="pattern0_91_75" patternContentUnits="objectBoundingBox" width="1" height="1">
-                            <use xlink:href="#image0_91_75"
-                                transform="matrix(0.000266809 0 0 0.000362587 0 -0.00943409)" />
-                        </pattern>
-                        <image id="image0_91_75" href="assets/graphics/mediumlogo.png" width="3748" height="2810" />
-                    </defs>
-                </svg>
-            </a>
+            <a class="navitem" href="https://medium.com" target="_blank"><img src="assets/graphics/medium.svg" alt="Medium"></a>
         </div>
     </footer>
 </body>
